@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Belanja</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>🛒 Aplikasi Daftar Belanja</h2>
+
+    <input type="text" id="item" placeholder="Nama Item">
+
+    <input type="number" id="jumlah" placeholder="Jumlah">
+
+    <select id="status">
+        <option value="Belum Dibeli">Belum Dibeli</option>
+        <option value="Sudah Dibeli">Sudah Dibeli</option>
+    </select>
+
+    <button onclick="tambahBelanja()">Tambah Barang</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Item</th>
+                <th>Jumlah</th>
+                <th>Status Belanja</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="daftarBelanja"></tbody>
+    </table>
+
+</div>
+
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
